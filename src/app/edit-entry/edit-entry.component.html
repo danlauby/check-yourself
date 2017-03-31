@@ -1,0 +1,19 @@
+<div *ngIf="childSelectedEntry">
+  <div class="well">
+    <hr>
+    <h2>Edit {{childSelectedEntry.food}} Entry:</h2>
+    <form class="form-group">
+      <label for="name">Food:</label>
+      <input [(ngModel)]="childSelectedEntry.food" id="food" class="form-control" type="text" name="food">
+
+      <label for="brand">Details:</label>
+      <input [(ngModel)]="childSelectedEntry.details" id="details" class="form-control" type="text" name="details">
+
+      <label for="price">Calories:</label>
+      <input [(ngModel)]="childSelectedEntry.calories" id="calories" class="form-control" type="text" name="calories">
+
+      <button (click)="doneButtonClicked()">Done</button>
+      <hr>
+    </form>
+  </div>
+</div>

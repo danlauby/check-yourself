@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Entry } from './../entry.model';
 
 @Component({
@@ -9,6 +9,7 @@ import { Entry } from './../entry.model';
 
 export class EntryListComponent implements OnInit {
   @Input() childEntryList: Entry[];
+  @Output() clickSender = new EventEmitter;
 
   filterByCalories: string = "allCalories";
 
@@ -16,6 +17,9 @@ export class EntryListComponent implements OnInit {
   this.filterByCalories = optionFromMenu;
   }
 
+  editButtonHasBeenClicked(entryToEdit: Entry) {
+   this.clickSender.emit(entryToEdit);
+  }
 
   constructor() { }
 

@@ -20,4 +20,12 @@ export class AppComponent {
   addEntry(newEntry: Entry) {
     this.masterEntryList.push(newEntry);
   }
+
+  editEntry(clickedEntry) {
+    this.selectedEntry = clickedEntry;
+  }
+
+  finishedEditing() {
+   this.selectedEntry = null;
+  }
 }
