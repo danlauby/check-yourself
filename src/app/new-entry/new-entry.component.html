@@ -1,0 +1,12 @@
+<div class="panel">
+   <h3>New Entry:</h3>
+   <form>
+     <label for="food">Food:</label>
+     <input #newFood id="food" class="form-control" type="text" name="food" required><br>
+     <label for="details">Details:</label>
+     <input #newDetails id="details" class="form-control" type="text" name="details" required><br>
+     <label for="calories">Calories:</label>
+     <input #newCalories id="calories" class="form-control" type="text" name="calories" required><br>
+     <button (click)="submitForm(newFood.value, newDetails.value, newCalories.value); newFood.value=''; newDetails.value=''; newCalories.value='';" class="btn btn-success">New Entry</button>
+   </form>
+ </div>

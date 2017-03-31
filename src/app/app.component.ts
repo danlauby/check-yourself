@@ -16,4 +16,8 @@ export class AppComponent {
     new Entry('Lime', 'Enjoyed a wedge of lime in my Corona. Feeling good about my diet!', 28),
     new Entry('Top Ramen', 'One helping and was light on the seasoning. A well rounded diet for a student.', 654)
   ];
+
+  addEntry(newEntry: Entry) {
+    this.masterEntryList.push(newEntry);
+  }
 }

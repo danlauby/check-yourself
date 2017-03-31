@@ -4,5 +4,6 @@
   </h1>
 </div>
 
+<app-entry-list [childEntryList]="masterEntryList"></app-entry-list>
 
-  <app-entry-list [childEntryList]="masterEntryList"></app-entry-list>
+<app-new-entry (newEntrySender)="addEntry($event)"></app-new-entry>

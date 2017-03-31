@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { EntryListComponent } from './entry-list/entry-list.component';
 import { CaloriesPipe } from './calories.pipe';
+import { NewEntryComponent } from './new-entry/new-entry.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EntryListComponent,
-    CaloriesPipe
+    CaloriesPipe,
+    NewEntryComponent
   ],
   imports: [
     BrowserModule,
