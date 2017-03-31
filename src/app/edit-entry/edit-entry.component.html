@@ -3,16 +3,16 @@
     <hr>
     <h2>Edit {{childSelectedEntry.food}} Entry:</h2>
     <form class="form-group">
-      <label for="name">Food:</label>
+      <label for="food">Food:</label>
       <input [(ngModel)]="childSelectedEntry.food" id="food" class="form-control" type="text" name="food">
 
-      <label for="brand">Details:</label>
-      <input [(ngModel)]="childSelectedEntry.details" id="details" class="form-control" type="text" name="details">
+      <label for="details">Details:</label>
+      <textarea [(ngModel)]="childSelectedEntry.details" id="details" class="form-control" type="text" name="details"></textarea>
 
-      <label for="price">Calories:</label>
-      <input [(ngModel)]="childSelectedEntry.calories" id="calories" class="form-control" type="text" name="calories">
+      <label for="calories">Calories:</label>
+      <input [(ngModel)]="childSelectedEntry.calories" id="calories" class="form-control" type="text" name="calories"><br>
 
-      <button (click)="doneButtonClicked()">Done</button>
+      <button (click)="doneButtonClicked()" class="btn btn-warning">Update</button>
       <hr>
     </form>
   </div>

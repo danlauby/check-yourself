@@ -1,8 +1,18 @@
+/*font-family: 'Revalia', cursive;
+font-family: 'Space Mono', monospace;
+font-family: 'Inconsolata', monospace;*/
+
 li {
+  font-family: 'Inconsolata', monospace;
   list-style-type: none;
 }
 
 h2 {
+  font-family: 'Space Mono', monospace;
   font-weight: bold;
   font-size: 30px;
+}
+
+.fa-cutlery {
+  color: red;
 }

@@ -9,12 +9,13 @@
 
    <h2>Food Entries:</h2>
 
-  <li *ngFor="let entry of childEntryList | calories:filterByCalories"><h3>* {{entry.food}}</h3>
-    <div class="well">
+  <li *ngFor="let entry of childEntryList | calories:filterByCalories"><h3><i class="fa fa-cutlery" aria-hidden="true"></i>
+ {{entry.food}} <button (click)="editButtonHasBeenClicked(entry)" class="btn btn-warning btn-xs">Edit</button></h3>
+    <div class="panel">
     <ul>
       <li>Details: {{entry.details}}</li>
       <li>Calories: {{entry.calories}}</li>
-      <button (click)="editButtonHasBeenClicked(entry)" class="btn btn-warning">Edit</button>
+
     </ul>
   </div>
   </li>
