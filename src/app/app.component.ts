@@ -8,7 +8,7 @@ import { Entry } from './entry.model';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Check YoSelf!';
+  title = 'Check Yo-Self!';
   selectedEntry = null;
 
   masterEntryList: Entry[] = [

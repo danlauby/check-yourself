@@ -5,12 +5,26 @@ font-family: 'Inconsolata', monospace;*/
 li {
   font-family: 'Inconsolata', monospace;
   list-style-type: none;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 h2 {
   font-family: 'Space Mono', monospace;
   font-weight: bold;
+  font-size: 33px;
+  color: rgb(103, 63, 63);
+}
+
+h3 {
   font-size: 30px;
+  color: rgb(103, 63, 63);
+
+}
+
+span {
+  font-weight: bold;
 }
 
 .fa-cutlery {

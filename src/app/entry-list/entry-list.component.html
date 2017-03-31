@@ -13,8 +13,8 @@
  {{entry.food}} <button (click)="editButtonHasBeenClicked(entry)" class="btn btn-warning btn-xs">Edit</button></h3>
     <div class="panel">
     <ul>
-      <li>Details: {{entry.details}}</li>
-      <li>Calories: {{entry.calories}}</li>
+      <li><span>Details:</span> {{entry.details}}</li>
+      <li [class]="highCal(entry)"><span>Calories:</span> {{entry.calories}}</li>
 
     </ul>
   </div>
