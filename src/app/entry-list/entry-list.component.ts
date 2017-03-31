@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter } from '@angular/core';
 import { Entry } from './../entry.model';
 
 @Component({
@@ -9,6 +9,13 @@ import { Entry } from './../entry.model';
 
 export class EntryListComponent implements OnInit {
   @Input() childEntryList: Entry[];
+
+  filterByCalories: string = "allCalories";
+
+  onChange(optionFromMenu) {
+  this.filterByCalories = optionFromMenu;
+  }
+
 
   constructor() { }
 
