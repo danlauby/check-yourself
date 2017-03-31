@@ -1,5 +1,9 @@
 # CheckYourself
 
+## Description
+
+This application allows a user to add food entries for a day to catalog what they ate, how many calories it had and additional notes. The user can add and update entries.
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
 
 ## Development server
@@ -29,3 +33,38 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Planning
+
+1. Configuration/dependencies
+  * NPM (Development)
+    * @angular/cli (Populates  an Angular application)
+    * @angular/compiler-cli (Compiles TypeScript into JavaScript in which browsers can understand)
+    * Jasmine - core, spec-reporter  (Behavior-driven development framework for testing JavaScript code)
+    * Node (JavaScript runtime built on Chrome's V8 JavaScript engine)
+    * ts-node (TypeScript execution environment for node)
+    * typescript (A superset of JavaScript that compiles to clean JavaScript output)
+    * codelyzer (Helps write consistent code, and discover potential errors)
+    * gulp-concat (concatenates files into one)
+    * karma - chrome-launcher, cli, jasmine, jasmine-html-reporter, coverage-istanbul-reporter (Allows you to execute JavaScript code in multiple real browsers)
+    * protractor (end-to-end test framework for Angular and AngularJS applications)
+    * tslint (Checks your TypeScript code for readability, maintainability, and functionality errors)
+
+  * bower (Production)
+    * Bootstrap
+
+ 2. Components
+
+  * entries: Will display all or chosen entries to user.
+  * new-entries: Will allow user to enter a new entry and display it on entries view.
+  * edit-entries: Will allow user to edit/update a chosen entry and display it on entries view.
+  * calorie-pipe: Will allow user to only view high-calorie foods (more than 500 calories), or only lower-calorie foods (less than 500 calories).
+  * entry-model: Allow all components to use Entry class.
+
+3. UX/UI
+  * Include and modify bootstrap.
+  * Develop custom style
+
+## legal
+
+Copyright (c) 2017 Copyright Holder All Rights Reserved.
